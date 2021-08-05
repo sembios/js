@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.body {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/*--Header--*/
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+}
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 80px;
+    
+ 
+  }
+
+  .nav__link {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.2s;
+    
+  }
+
+  .nav__link:hover {
+    /* text-decoration: underline; */
+    opacity: 1;
+  }
+
+
+  /*---Contact ME---*/
+.intro {
+    margin-top: 200px;
+    color: white;
+}
+
+.contactme {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+}  
+
+.contactme__item {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+}
+
+
+.form__item {
+    height: 500px;
+    width: 600px;
+    /* background: chocolate; */
+    padding-top: 100px;
+    
+}
+
+.form__item input {
+    background: white;
+    font-size: 20px;
+}
+
+.form__item button {
+    background: white;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+
+.soc__item {
+    margin-left: 30px;
+    height: 500px;
+    width: 600px;
+}
+
+.form__name {
+    width: 600px;
+    margin: 0 0 20px;
+    height: 30px;
+}
+
+.form__mail {
+    width: 290px;
+    height: 30px;
+}
+
+.form__sbj {
+    width: 290px;
+    margin-left: 16px;
+    height: 30px;
+}
+
+.form__msg {
+    width: 600px;
+    height: 200px;
+    margin-top: 20px;
+}
+.btn {
+    width: 110px;
+    height: 30px;
+    font-size: 20px;
+    
+}
+
+.soc__icon {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.icon__style {
+    opacity: 0.5;
+      
+}
+
+.icon__style:hover {
+    opacity: 1.5;
+    
+}
+
+
+ /*---Адаптация---*/
+
+ @media all and (max-width :1000px) {
+    .form__item {
+     justify-content: center;
+    }
+    .contactme {
+     flex-wrap: wrap;
+    }
+    .soc__icon {
+     margin-top: 0;
+     justify-content: center;
+    }
+    .soc__item {
+     margin: 0 auto;
+    }
+}

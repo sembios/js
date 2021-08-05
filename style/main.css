@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+.body {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/*--Header--*/
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+}
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    
+  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 80px;
+ 
+  }
+
+  .nav__link {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+
+  .nav__link:hover {
+    /* text-decoration: underline; */
+    opacity: 1;
+  }
+
+
+  /*---Intro---*/
+
+  .intro {
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+    height: 700px;
+    background: url(./bg4.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+
+  .intro__inner {
+    max-width: 600px;
+    width: 100%;
+    margin-left: 0;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+  }
+  .intro__title {
+    margin: 0 0 30px;
+    font-size: 40px;
+    font-weight: 600;
+    color: green;
+    
+  }
+  .intro__subtitle {
+    font-size: 30px;
+    height: 100px;
+    font-weight: 500;
+  }
+
+  .intro__text{
+    padding-top: 50px;
+  }
+
+  .intro__text {  
+    width: 600px;
+    font-size: 25px;
+    font-weight: 200;
+    
+  }
+
+  .intro__photo {
+    display: flex;
+  }
+  
+  .intro__text ul {
+padding-top: 10px;
+  }
+
+  /*---Адаптация---*/
+
+  @media all and (max-width :920px) {
+
+    .intro__photo--style {
+      justify-content: center;
+        display: none;
+    }
+}
+
+  /*---Animations---*/
+  .intro__subtitle--animate {
+    text-indent: 12px;
+    color:red;
+  }
+  
+  .intro__subtitle--animate:before {
+    content: "cool.";
+    animation: topToBottom 7s infinite 0s;
+  }
+
+  @keyframes topToBottom {
+    0% {
+      content: "Изучить основы JavaScript";
+    }
+    20% {
+      content: "Изучить основы JavaScript";
+    }
+    25% {
+      content: "React.";
+    }
+    35% {
+      content: "React.";
+    }
+    50% {
+      content: "Понимать и править код";
+    }
+    60% {
+      content: "Понимать и править код";
+    }
+    75% {
+      content: "Начать применять знания на работе";
+    }
+    80% {
+      content: "Начать применять знания на работе";
+    }
+    95% {
+      content: "Развиваться дальше в этом направлении";
+    }
+    100% {
+      content: "Развиваться дальше в этом направлении";
+    }
+  }
